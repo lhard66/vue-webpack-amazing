@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>{{person.name}}</span>
-    <input type="text" v-model="person.age"></input>
+    <input type="text" v-model="person.age"/>
   </div>
 </template>
 
