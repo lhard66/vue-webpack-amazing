@@ -64,6 +64,15 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          plugins: ['lodash'],
+          // presets: [['@babel/env', { 'targets': { 'node': 6 } }]]
+        }
       }
     ]
   },

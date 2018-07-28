@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { concat, join } from 'lodash';
+import { join } from 'lodash';
 
 export default {
   name: 'HelloWorld',
@@ -18,10 +18,12 @@ export default {
   computed: {
     demo() {
       var array = [1];
-      return concat(array, 2, [3], [[4]]);
+      // return concat(array, 2, [3], [[4]]);
+      return '456';
     },
     demo2() {
       return join(['a', 'b', 'c'], '~');
+      // return '123';
     }
   }
 }
