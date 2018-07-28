@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     demo() {
-      var array = [1];
+      // var array = [1];
       // return concat(array, 2, [3], [[4]]);
       return '456';
     },
